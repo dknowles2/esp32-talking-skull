@@ -43,21 +43,6 @@ void setup()
   mp3.volume(30);
 }
 
-void setpos(int pos)
-{
-  Serial.printf("Servo @ %d\n", pos);
-  servo.write(pos);
-  delay(1000);
-}
-
-void sweep()
-{
-  setpos(0);
-  delay(1000);
-  setpos(180);
-  delay(1000);
-}
-
 void loop()
 {
   Serial.println("");
